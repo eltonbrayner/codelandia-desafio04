@@ -1,0 +1,152 @@
+/* font-family: 'Lato', sans-serif;
+font-family: 'Merriweather', serif; */
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+a,
+a:visited {
+  color: var(--blue);
+}
+
+.leftArea {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  background-color: var(--white300);
+}
+
+.leftArea img {
+  width: 400px;
+}
+
+.loginArea {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: var(--dark);
+}
+
+.loginContainer {
+  margin-bottom: 4rem;
+}
+
+.loginArea p {
+  margin-bottom: 7px;
+  color: inherit;
+  font-size: 16px;
+  font-family: 'Merriweather', serif;
+}
+
+.loginArea h1 {
+  margin-bottom: 39px;
+  color: inherit;
+  font-size: 26px;
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+}
+
+.inputGroup label {
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  margin-bottom: 10px;
+  display: block;
+  color: inherit;
+}
+
+.inputGroup:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.inputGroup input[type='text'],
+.inputGroup input[type='password'] {
+  padding: 15px;
+  width: 100%;
+  border: solid 1px var(--input);
+  border-radius: 5px;
+  color: inherit;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+}
+
+.optionsGroup {
+  display: flex;
+  justify-content: space-between;
+  margin: 28px 0;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+}
+
+.optionsGroup input[type='radio'] {
+  margin-right: 10px;
+}
+
+input[type='text']:focus,
+input[type='password']:focus {
+  outline: none;
+  box-shadow: 0 0 10px var(--green);
+}
+
+.optionsGroup .radioBtn {
+  display: flex;
+  align-items: center;
+}
+
+.loginArea button {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  width: 100%;
+}
+
+.loginArea button[type='submit'] {
+  padding: 1.5rem 0rem;
+  background-color: var(--green);
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--white);
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.loginArea button {
+  display: flex;
+  padding: 1.5rem 0rem;
+  background-color: var(--dark);
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 5px;
+  justify-content: center;
+}
+
+.loginArea button img {
+  margin-right: 1rem;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 2.5rem;
+  color: inherit;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  body {
+    grid-template-columns: 1fr;
+  }
+
+  .leftArea {
+    display: none;
+  }
+
+  .loginArea {
+    padding: 3rem;
+  }
+}
